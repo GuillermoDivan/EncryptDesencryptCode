@@ -102,7 +102,7 @@ textarea::-webkit-scrollbar {
 .bigTextArea {
   font-size: 30px !important;
   font-weight: 500 !important;
-  height: auto !important;
+  height: 400px !important;
   position: absolute;
   top: -300px !important;
 }
