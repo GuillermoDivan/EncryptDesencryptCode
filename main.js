@@ -6,14 +6,12 @@ const botonCopiar = document.querySelector("#copiar");
 const ocultarImg = document.querySelector("#mainImg");
 const ocultarRectangleText = document.querySelector("#rectangleText1");
 
-
-
 botonEncriptar.addEventListener("click", encrypt);
 botonEncriptar.addEventListener("click", hideImgAndText);
 botonEncriptar.addEventListener("click", showCopyButton);
 botonEncriptar.addEventListener("click", makeTextBigger);
 botonDesencriptar.addEventListener("click", desencrypt);
-botonDesencriptar.addEventListener("click", showImgAndText);
+/*botonDesencriptar.addEventListener("click", showImgAndText);*/
 botonDesencriptar.addEventListener("click", hideCopyButton);
 botonDesencriptar.addEventListener("click", makeTextSmaller);
 botonCopiar.addEventListener("click", copy);
@@ -37,7 +35,7 @@ function hideImgAndText() {
 }
 
 function showCopyButton() {
-  botonCopiar.style.display = "block";
+  botonCopiar.style.display = "initial";
 }
 
 function makeTextBigger() {
@@ -53,17 +51,17 @@ function desencrypt() {
   desencrypedMessage = encryptingMessageA.replaceAll("ai", "a");
   textoPrincipal.value = desencrypedMessage;
   textoSecundario.value = desencrypedMessage;
-  mainImg.style.display = "block";
-  rectangleText1.style.display = "block";
+  const event = new Event("input");
+  rectangleText1.dispatchEvent(event);
 }
 
-function showImgAndText() {
+/*function showImgAndText() {
   ocultarImg.style.display = "block";
   ocultarRectangleText.style.display = "block";
-}
+}*/
 
 function hideCopyButton() {
-  botonCopiar.style.display = "block";
+  botonCopiar.style.display = "none";
 }
 
 function makeTextSmaller() {

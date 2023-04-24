@@ -2,14 +2,6 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #dddddd;
 }
-main {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
-section{
-  min-width: 100px;
-}
 
 /* Header */
 #logoAlura {
@@ -18,7 +10,6 @@ section{
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  
   width: 120px;
   height: 48px;
   left: 40px;
@@ -26,16 +17,18 @@ section{
 }
 
 /* Main */
-
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 #mainArea {
-  height: 90vh;  
+  height: 90vh;
   display: grid;
   align-content: center;
   grid-template-rows: 80% auto auto;
-
 }
-
 
 #mainArea textarea {
   background-color: #dddddd;
@@ -52,8 +45,12 @@ section{
   color: #0a3871;
 }
 
+textarea {
+  outline: none;
+}
+
 /*Aside*/
-#rectangle {  
+#rectangle {
   background: #ffffff;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
@@ -69,7 +66,7 @@ section{
   align-items: flex;
 }
 
-#rectangleText1 { 
+#rectangleText1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
@@ -80,14 +77,11 @@ section{
 }
 
 #rectangleText textarea {
-  width: 336px;
-  height: 48px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #495057;
-  outline: none;
   border: none;
   resize: none;
 }
@@ -97,14 +91,9 @@ textarea::-webkit-scrollbar {
 }
 
 .bigTextArea {
+  margin-top: 32px;
   font-size: 30px !important;
   font-weight: 500 !important;
-  height: 400px !important;
-  
-  top: -300px !important;
-}
-
-#disclaimer {
 }
 
 #disclaimerImg {
@@ -131,9 +120,6 @@ textarea::-webkit-scrollbar {
 }
 
 /*Buttons */
-#buttonArea {
-
-}
 
 .button {
   box-sizing: border-box;
@@ -148,7 +134,7 @@ textarea::-webkit-scrollbar {
   color: #0a3871;
 }
 
-#encriptar{
+#encriptar {
   margin-right: 25px;
 }
 
@@ -161,7 +147,6 @@ textarea::-webkit-scrollbar {
   display: none;
   box-sizing: border-box;
   padding: 24px;
-  
   width: 336px;
   height: 67px;
   top: 265px;
@@ -169,302 +154,76 @@ textarea::-webkit-scrollbar {
 
 /*Especificaciones para tablets*/
 @media (max-width: 800px) {
-  /* Header */
-  #logoAlura {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    left: 1px;
-    top: 15px;
-  }
-
-  /* Main */
-  #mainArea textarea {
-    
-    width: 688px;
-    height: 48px;
-    left: 20px;
-    top: 90px;
-    background-color: #dddddd;
-    border: none;
-    font-weight: 400;
-    font-size: 32px;
-    font-family: "Inter";
-    font-style: normal;
-    line-height: 150%;
-    resize: none;
-  }
-
-  ::-webkit-input-placeholder {
-    color: #0a3871;
-  }
-
-  /*Disclaimer*/
-  #disclaimer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    
-    width: 229px;
-    height: 18px;
-    left: 40px;
-    top: 375px;
-  }
-
-  #disclaimerImg {
-    width: 16px;
-    height: 16px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  #disclaimerText {
-    width: 205px;
-    height: 18px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: #495057;
-    opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-
-  /*Buttons*/
-  #buttonArea {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    
-    width: 680px;
-    height: 67px;
-    left: 20px;
-    top: 400px;
-  }
-
-  .button {
-    box-sizing: border-box;
-    width: 150px;
-    height: 40px;
-    padding: 5px;
-    background: #d8dfe8;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    text-align: center;
-    color: #0a3871;
-  }
-
-  .button:hover {
-    background: #0a3871;
-    color: #d8dfe8;
-  }
-
-  #copiar {
-    display: none;
-    box-sizing: border-box;
-    padding: 24px;
-    
-    width: 336px;
-    height: 67px;
-    top: 265px;
-  }
-
-  /*Footer Tablets*/
-  #rectangleText {
-    display: flex;
-    flex-direction: column;
-    align-items: flex;
-    padding: 0px;
-    
-    width: 336px;
-    height: auto;
-    top: 440px;
-    left: 0px;
-  }
-
-  #rectangleText1 {
-    height: 15px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 120%;
-    text-align: center;
-    font-weight: bold;
-    color: #343a40;
-  }
-
-  #rectangleText textarea {
-    width: 336px;
-    height: 48px;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    background-color: #dddddd;
-    color: #495057;
-    outline: none;
-    border: none;
-    resize: none;
-  }
-
-  textarea::-webkit-scrollbar {
-    width: 0px;
-  }
 }
 
 /*Especificaciones para celulares*/
 @media (max-width: 320px) {
+  * {
+    max-width: 320px;
+  }
   /* Header */
   #logoAlura {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    width: 25%;
-    height: auto;
-    left: 1px;
-    top: 10px;
+    display: block;
+    margin: 5px;
+    width: 60px;
+    height: 24px;
   }
 
-  /* Main */
+  #mainArea {
+    max-width: 310px;
+    height: auto;
+    display: block;
+  }
+
   #mainArea textarea {
-    
-    width: 285px;
-    height: 48px;
-    left: 20px;
-    top: 60px;
     background-color: #dddddd;
     border: none;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Inter";
     font-style: normal;
-    resize: none;
+    resize: none;    
   }
 
   ::-webkit-input-placeholder {
     color: #0a3871;
   }
 
-  /*Disclaimer*/
-  #disclaimer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 4px;
-    
-    width: 300px;
-    height: 18px;
-    left: 50px;
-    top: 245px;
-  }
-
-  #disclaimerImg {
-    width: 16px;
-    height: 16px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  #disclaimerText {
-    width: 205px;
-    height: 18px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #495057;
-    opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-
-  /*Buttons*/
-  #buttonArea {
-    display: block;
-    justify-items: center;
-    gap: 4px;
-    
-    width: 680px;
-    height: 67px;
-    left: 45px;
-    top: 265px;
-  }
-
-  .button {
-    display: block;
-    box-sizing: border-box;
-    width: 250px;
-    height: 40px;
-    padding: 3px;
-    margin-bottom: 3px;
-    background: #d8dfe8;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
+  /*Downside*/
+  #rectangle {
+    background: #dddddd;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
     text-align: center;
-    color: #0a3871;
+    height: 90vh;
   }
 
-  .button:hover {
-    background: #0a3871;
-    color: #d8dfe8;
-  }
-
-  #copiar {
+  #mainImg {
     display: none;
-    box-sizing: border-box;
-    padding: 3px;
-    
-    width: 250px;
-    height: 40px;
-    top: 265px;
-    left: 45px;
   }
 
-  /*Footer Celulares*/
   #rectangleText {
-    display: flex;
-    flex-direction: column;
     align-items: flex;
-    padding: 0px;
-    
-    width: 336px;
-    height: auto;
-    top: 350px;
-    left: 0px;
   }
 
   #rectangleText1 {
-    height: 15px;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 24px;
     line-height: 120%;
     text-align: center;
+    font-weight: bold;
     color: #343a40;
+    padding: 10px;
   }
 
   #rectangleText textarea {
-    width: 285px;
-    height: 48px;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    background-color: #dddddd;
     color: #495057;
-    outline: none;
     border: none;
     resize: none;
-    left: 20px;
-    top: 405px;
+    background: #dddddd;    
   }
 
   textarea::-webkit-scrollbar {
@@ -472,9 +231,66 @@ textarea::-webkit-scrollbar {
   }
 
   .bigTextArea {
-    font-size: 16px !important;
-    font-weight: 400 !important;
-    
-    top: 0px !important;
+    margin-top: 0px !important;
+    font-size: 30px !important;
+    font-weight: 500 !important;
+  }
+
+  #disclaimerImg {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  #disclaimerText {
+    width: 205px;
+    height: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  /*Buttons */
+  #buttonArea {
+    max-width: 300px;
+  }
+
+  .button {
+    box-sizing: border-box;
+    padding: 12px;
+    width: 300px;
+    height: 67px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    text-align: center;
+    color: #0a3871;
+  }
+
+  #encriptar {
+    margin-bottom: 5px;
+  }
+
+  .button:hover {
+    background: #0a3871;
+    color: #d8dfe8;
+  }
+
+  #copiar {
+    display: none;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 336px;
+    height: 67px;
+    top: 265px;
   }
 }
