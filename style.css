@@ -356,7 +356,7 @@ textarea::-webkit-scrollbar {
   /* Main */
   #mainArea textarea {
     position: absolute;
-    width: 688px;
+    width: 285px;
     height: 48px;
     left: 20px;
     top: 60px;
@@ -411,23 +411,23 @@ textarea::-webkit-scrollbar {
 
   /*Buttons*/
   #buttonArea {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: block;
     justify-items: center;
     gap: 4px;
     position: absolute;
     width: 680px;
     height: 67px;
-    left: 50px;
+    left: 45px;
     top: 265px;
   }
 
   .button {
+    display: block;
     box-sizing: border-box;
-    width: 110px;
+    width: 250px;
     height: 40px;
     padding: 3px;
+    margin-bottom: 3px;
     background: #d8dfe8;
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -443,14 +443,15 @@ textarea::-webkit-scrollbar {
   #copiar {
     display: none;
     box-sizing: border-box;
-    padding: 24px;
+    padding: 3px;
     position: absolute;
-    width: 336px;
-    height: 67px;
+    width: 250px;
+    height: 40px;
     top: 265px;
+    left: 45px;
   }
 
-  /*Footer Tablets*/
+  /*Footer Celulares*/
   #rectangleText {
     display: flex;
     flex-direction: column;
@@ -459,7 +460,7 @@ textarea::-webkit-scrollbar {
     position: absolute;
     width: 336px;
     height: auto;
-    top: 310px;
+    top: 350px;
     left: 0px;
   }
 
@@ -473,7 +474,7 @@ textarea::-webkit-scrollbar {
   }
 
   #rectangleText textarea {
-    width: 336px;
+    width: 285px;
     height: 48px;
     font-weight: 400;
     font-size: 16px;
@@ -483,9 +484,18 @@ textarea::-webkit-scrollbar {
     outline: none;
     border: none;
     resize: none;
+    left: 20px;
+    top: 405px;
   }
 
   textarea::-webkit-scrollbar {
     width: 0px;
+  }
+
+  .bigTextArea {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    position: absolute;
+    top: 0px !important;
   }
 }

@@ -18,13 +18,20 @@
         <img id="logoAlura" src="Logo.png" alt="Logo de Alura">
     </header>
 
-    <main id="mainArea">
-        <section>
-            <textarea id="mainText" placeholder="Ingrese el texto aquí:"></textarea>
+    <main>
+    <section id="mainArea">
+        <textarea id="mainText" placeholder="Ingrese el texto aquí:"></textarea>
+        <section id="disclaimer">
+            <img id="disclaimerImg" src="disclaimerImg.png" alt="Signo de advertencia">
+            <span id="disclaimerText"> Solo letras minúsculas y sin acentos </span>
         </section>
-    </main>
+        <section id="buttonArea">
+            <button class="button" id="encriptar"> Encriptar </button>
+            <button class="button" id="desencriptar"> Desencriptar </button>
+        </section>
+    </section>
 
-    <aside>
+    <section>
         <div id="rectangle"> </div>
         <img id="mainImg" src="Muñeco.png" alt="Dibujo persona con lupa y diamante">
         <div id="rectangleText">
@@ -32,18 +39,8 @@
             <textarea id="rectangleText2" placeholder="Ingresa el texto que deseas desencriptar."></textarea>
         <div>
         <button class="button" id="copiar"> Copiar texto </button>
-    </aside>
-
-    <footer>
-    <section id="disclaimer">
-            <img id="disclaimerImg" src="disclaimerImg.png" alt="Signo de advertencia">
-            <span id="disclaimerText"> Solo letras minúsculas y sin acentos </span>
-    </section>
-        <section id="buttonArea">
-            <button class="button" id="encriptar"> Encriptar </button>
-            <button class="button" id="desencriptar"> Desencriptar </button>
         </section>
-    </footer>
+    </main>
 
     <script src="main.js"></script>
 </body>
