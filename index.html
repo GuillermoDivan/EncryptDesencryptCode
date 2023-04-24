@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Encrypt your message!</title>
+</head>
+<body>
+    <header id="logo">
+        <img id="logoAlura" src="Logo.png" alt="Logo de Alura">
+    </header>
+
+    <main id="mainArea">
+        <section>
+            <textarea id="mainText" row="10" placeholder="Ingrese el texto aquí:"></textarea>
+        </section>
+    </main>
+
+    <aside>
+        <div id="rectangle"> </div>
+        <img id="mainImg" src="Muñeco.png" alt="Dibujo persona con lupa y diamante">
+        <div id="rectangleText">
+            <p id="rectangleText1"> Ningún mensaje fue encontrado</p>
+            <textarea row="10" id="rectangleText2" placeholder="Ingresa el texto que deseas desencriptar."></textarea>
+        <div>
+        <button class="button" id="copiar"> Copiar texto </button>
+    </aside>
+
+    <footer>
+    <section id="disclaimer">
+            <img id="disclaimerImg" src="disclaimerImg.png" alt="Signo de advertencia">
+            <span id="disclaimerText"> Solo letras minúsculas y sin acentos </span>
+    </section>
+        <section id="buttonArea">
+            <button class="button" id="encriptar"> Encriptar </button>
+            <button class="button" id="desencriptar"> Desencriptar </button>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
