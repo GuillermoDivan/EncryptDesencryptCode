@@ -2,6 +2,14 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #dddddd;
 }
+main {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+section{
+  min-width: 100px;
+}
 
 /* Header */
 #logoAlura {
@@ -10,7 +18,7 @@ body {
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  position: absolute;
+  
   width: 120px;
   height: 48px;
   left: 40px;
@@ -18,12 +26,18 @@ body {
 }
 
 /* Main */
+
+
+#mainArea {
+  height: 90vh;  
+  display: grid;
+  align-content: center;
+  grid-template-rows: 80% auto auto;
+
+}
+
+
 #mainArea textarea {
-  position: absolute;
-  width: 577px;
-  height: 48px;
-  left: 240px;
-  top: 168px;
   background-color: #dddddd;
   border: none;
   font-weight: 400;
@@ -39,47 +53,30 @@ body {
 }
 
 /*Aside*/
-#rectangle {
-  position: absolute;
-  width: 400px;
-  height: 704px;
-  left: 1000px;
-  top: 20px;
+#rectangle {  
   background: #ffffff;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
+  text-align: center;
+  height: 90vh;
 }
 
 #mainImg {
-  float: right;
-  position: absolute;
-  width: 336px;
-  height: 304px;
-  left: 1032px;
-  top: 93px;
+  padding-top: 10px;
 }
 
 #rectangleText {
-  display: flex;
-  flex-direction: column;
   align-items: flex;
-  padding: 0px;
-  gap: 16px;
-  position: absolute;
-  width: 336px;
-  height: auto;
-  left: 1032px;
-  top: 379px;
 }
 
-#rectangleText1 {
-  height: 58px;
+#rectangleText1 { 
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
   font-weight: bold;
   color: #343a40;
+  padding: 10px;
 }
 
 #rectangleText textarea {
@@ -103,22 +100,11 @@ textarea::-webkit-scrollbar {
   font-size: 30px !important;
   font-weight: 500 !important;
   height: 400px !important;
-  position: absolute;
+  
   top: -300px !important;
 }
 
-/*Footer*/
 #disclaimer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-  position: absolute;
-  width: 229px;
-  height: 18px;
-  left: 240px;
-  top: 610px;
 }
 
 #disclaimerImg {
@@ -144,24 +130,13 @@ textarea::-webkit-scrollbar {
   flex-grow: 0;
 }
 
-/*Buttons (Footer)*/
+/*Buttons */
 #buttonArea {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  position: absolute;
-  width: 680px;
-  height: 67px;
-  left: 240px;
-  top: 645px;
+
 }
 
 .button {
   box-sizing: border-box;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 24px;
   gap: 8px;
   width: 328px;
@@ -173,6 +148,10 @@ textarea::-webkit-scrollbar {
   color: #0a3871;
 }
 
+#encriptar{
+  margin-right: 25px;
+}
+
 .button:hover {
   background: #0a3871;
   color: #d8dfe8;
@@ -182,7 +161,7 @@ textarea::-webkit-scrollbar {
   display: none;
   box-sizing: border-box;
   padding: 24px;
-  position: absolute;
+  
   width: 336px;
   height: 67px;
   top: 265px;
@@ -195,14 +174,14 @@ textarea::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
+    
     left: 1px;
     top: 15px;
   }
 
   /* Main */
   #mainArea textarea {
-    position: absolute;
+    
     width: 688px;
     height: 48px;
     left: 20px;
@@ -228,7 +207,7 @@ textarea::-webkit-scrollbar {
     align-items: center;
     padding: 0px;
     gap: 8px;
-    position: absolute;
+    
     width: 229px;
     height: 18px;
     left: 40px;
@@ -264,7 +243,7 @@ textarea::-webkit-scrollbar {
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
-    position: absolute;
+    
     width: 680px;
     height: 67px;
     left: 20px;
@@ -292,7 +271,7 @@ textarea::-webkit-scrollbar {
     display: none;
     box-sizing: border-box;
     padding: 24px;
-    position: absolute;
+    
     width: 336px;
     height: 67px;
     top: 265px;
@@ -304,7 +283,7 @@ textarea::-webkit-scrollbar {
     flex-direction: column;
     align-items: flex;
     padding: 0px;
-    position: absolute;
+    
     width: 336px;
     height: auto;
     top: 440px;
@@ -346,7 +325,7 @@ textarea::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
+    
     width: 25%;
     height: auto;
     left: 1px;
@@ -355,7 +334,7 @@ textarea::-webkit-scrollbar {
 
   /* Main */
   #mainArea textarea {
-    position: absolute;
+    
     width: 285px;
     height: 48px;
     left: 20px;
@@ -380,7 +359,7 @@ textarea::-webkit-scrollbar {
     align-items: center;
     padding: 0px;
     gap: 4px;
-    position: absolute;
+    
     width: 300px;
     height: 18px;
     left: 50px;
@@ -414,7 +393,7 @@ textarea::-webkit-scrollbar {
     display: block;
     justify-items: center;
     gap: 4px;
-    position: absolute;
+    
     width: 680px;
     height: 67px;
     left: 45px;
@@ -444,7 +423,7 @@ textarea::-webkit-scrollbar {
     display: none;
     box-sizing: border-box;
     padding: 3px;
-    position: absolute;
+    
     width: 250px;
     height: 40px;
     top: 265px;
@@ -457,7 +436,7 @@ textarea::-webkit-scrollbar {
     flex-direction: column;
     align-items: flex;
     padding: 0px;
-    position: absolute;
+    
     width: 336px;
     height: auto;
     top: 350px;
@@ -495,7 +474,7 @@ textarea::-webkit-scrollbar {
   .bigTextArea {
     font-size: 16px !important;
     font-weight: 400 !important;
-    position: absolute;
+    
     top: 0px !important;
   }
 }
