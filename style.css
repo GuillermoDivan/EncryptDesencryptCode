@@ -205,7 +205,7 @@ textarea::-webkit-scrollbar {
 
 
 /*Especificaciones para tablets*/
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 321px) {
   /* Header */
   #logoAlura {
     display: flex;
@@ -331,9 +331,9 @@ textarea::-webkit-scrollbar {
   }
 
   #rectangleText1 {
-    height: 15px;
+    height: auto;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 120%;
     text-align: center;
     font-weight: bold;
@@ -342,6 +342,7 @@ textarea::-webkit-scrollbar {
 
   #rectangleText textarea {
     width: 336px;
+    height: auto;
     max-height: 208px;
     font-weight: 400;
     font-size: 30px;
@@ -462,6 +463,8 @@ textarea::-webkit-scrollbar {
     height: 40px;
     padding: 3px;
     margin-bottom: 3px;
+    font-size: 16px;
+    font-weight: 300;
     background: #d8dfe8;
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -478,6 +481,8 @@ textarea::-webkit-scrollbar {
     display: none;
     box-sizing: border-box;
     padding: 3px;
+    font-size: 16px;
+    font-weight: 300;
     position: absolute;
     width: 250px;
     height: 40px;

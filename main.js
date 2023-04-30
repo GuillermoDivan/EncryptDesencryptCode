@@ -6,8 +6,6 @@ const botonCopiar = document.querySelector("#copiar");
 const Img = document.querySelector("#mainImg");
 const ocultarRectangleText = document.querySelector("#rectangleText1");
 
-
-
 botonEncriptar.addEventListener("click", encrypt);
 botonEncriptar.addEventListener("click", hideImgAndText);
 botonEncriptar.addEventListener("click", showCopyButton);
@@ -52,16 +50,16 @@ function desencrypt() {
   encryptingMessageA = encryptingMessageE.replaceAll("enter", "e");
   desencrypedMessage = encryptingMessageA.replaceAll("ai", "a");
   textoPrincipal.value = desencrypedMessage;
-  textoSecundario.value = desencrypedMessage;
+  textoSecundario.value = "";
 }
 
 function showImg() {
   Img.className="mainImgShowed";
-  ocultarRectangleText.style.display = "none";
+  ocultarRectangleText.style.display = "block";
 }
 
 function hideCopyButton() {
-  botonCopiar.style.display = "block";
+  botonCopiar.style.display = "none";
 }
 
 function makeTextSmaller() {
