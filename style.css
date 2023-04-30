@@ -248,26 +248,25 @@ textarea::-webkit-scrollbar {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    left: 1px;
-    top: 15px;
+    left: 10px;
+    top: 55px;
   }
 
   /* Main */
   #mainArea textarea {
     position: absolute;
-    width: 688px;
-    max-height: 108px;
-    left: 20px;
-    top: 90px;
+    width: 720px;
+    max-height: 425px;
+    left: 60px;
+    top: 120px;
     overflow-y: scroll;
     outline: none;
     background-color: #dddddd;
     border: none;
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 40px;
     font-family: "Inter";
     font-style: normal;
-    line-height: 150%;
     resize: none;
   }
 
@@ -283,28 +282,27 @@ textarea::-webkit-scrollbar {
     padding: 0px;
     gap: 8px;
     position: absolute;
-    width: 229px;
-    height: 18px;
-    left: 40px;
-    top: 375px;
+    width: 600px;
+    height: auto;
+    left: 60px;
+    top: 575px;
   }
 
   #disclaimerImg {
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     flex: none;
     order: 0;
     flex-grow: 0;
   }
 
   #disclaimerText {
-    width: 205px;
-    height: 18px;
+    width: 400px;
+    height: 30px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
+    font-size: 20px;
     color: #495057;
     opacity: 0.8;
     flex: none;
@@ -314,26 +312,26 @@ textarea::-webkit-scrollbar {
 
   /*Buttons*/
   #buttonArea {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
+    text-align: center;
+    gap: 45px;
     position: absolute;
     width: 680px;
-    height: 67px;
-    left: 20px;
-    top: 400px;
+    height: 100px;
+    left: 60px;
+    top: 615px;
   }
 
   .button {
     box-sizing: border-box;
-    width: 150px;
-    height: 40px;
+    width: 320px;
+    height: 80px;
     padding: 5px;
     background: #d8dfe8;
     border: 1px solid #0a3871;
     border-radius: 24px;
     text-align: center;
+    font-size: 30px;
+    font-weight: 500;
     color: #0a3871;
   }
 
@@ -344,11 +342,10 @@ textarea::-webkit-scrollbar {
 
   #copiar {
     display: none;
-    box-sizing: border-box;
-    padding: 24px;
+    text-align: center;
     position: absolute;
     width: 336px;
-    height: 67px;
+    height: 80px;
     top: 265px;
   }
 
@@ -365,8 +362,8 @@ textarea::-webkit-scrollbar {
     position: absolute;
     width: 336px;
     height: auto;
-    top: 440px;
-    left: 0px;
+    top: 700px;
+    left: 250px;
   }
 
   #rectangleText1 {
@@ -381,9 +378,9 @@ textarea::-webkit-scrollbar {
 
   #rectangleText textarea {
     width: 336px;
-    max-height: 108px;
+    max-height: 208px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 30px;
     text-align: center;
     background-color: #dddddd;
     color: #495057;
@@ -395,6 +392,13 @@ textarea::-webkit-scrollbar {
 
   textarea::-webkit-scrollbar {
     width: 0px;
+  }
+
+  .bigTextArea {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    position: absolute;
+    top: 20px !important;
   }
 }
 
